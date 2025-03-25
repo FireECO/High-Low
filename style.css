@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.casino-container {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.4);
+    width: 90%;
+    max-width: 500px;
+}
+
+.casino-title {
+    font-size: 2rem;
+    text-shadow: 0px 0px 8px #ff00ff;
+}
+
+.balance-display {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* 🔥 Rolling Animation */
+.rolling-box {
+    margin: 20px auto;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.rolling-text {
+    display: none;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    animation: flash 1s infinite alternate;
+}
+
+.last-number {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    padding: 10px;
+    border-radius: 12px;
+    display: inline-block;
+    min-width: 80px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Countdown Timer */
+.countdown {
+    font-size: 1.2rem;
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+/* Betting Section */
+.betting-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    width: 80px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
+    background: #222;
+    color: white;
+}
+
+.max-bet-btn {
+    background: #ff00ff;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* 🔥 Casino Buttons */
+.bet-btn {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.bet-btn:disabled {
+    background: grey;
+    cursor: not-allowed;
+}
+
+/* Bet History */
+.bet-history {
+    margin-top: 20px;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.bet-history h2 {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-bottom: 8px;
+}
+
+#bet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#bet-list li {
+    font-size: 1rem;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+}
