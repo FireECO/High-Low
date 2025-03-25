@@ -2,6 +2,7 @@
 
 ## Description
 This is a simple casino-style game built with Python's `tkinter` library for the graphical user interface (GUI). The game allows players to place bets and guess whether the next random number will be higher, lower, or equal to the previous one. There are two modes: Pair/Odd (available when the last number is 0 or 100) and Higher/Lower/Equal (available for all other numbers). The player's balance is updated based on their guesses, and they can either win or lose money depending on the outcome. The game continues until the player runs out of money.
+
 A web version of the game is currently being worked on.
 
 ## Usage
